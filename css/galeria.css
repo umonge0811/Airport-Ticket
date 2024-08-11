@@ -1,0 +1,52 @@
+.galeria-container {
+    margin: 2rem 0;
+}
+
+.galeria-title {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.galeria-description {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.galeria-carousel {
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.galeria-img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.galeria-caption-container {
+    position: relative;
+    height: 0;
+}
+
+.galeria-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.galeria-caption h5 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.galeria-caption p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 0;
+}

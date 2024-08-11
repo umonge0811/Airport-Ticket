@@ -1,0 +1,66 @@
+<header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</header>
+
+<section id="contacto" class="section-padding bg-light">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h1>Contacto</h1>
+            <hr class="divider my-4">
+        </div>
+
+        <div class="row justify-content-around">
+            <div class="col-lg-5 col-md-12 mb-4">
+                <div class="card border-0 shadow rounded animate__animated animate__zoomIn">
+                    <div class="card-body ">
+                        <h4 class="card-title">Información de Contacto</h4>
+                        <p class="card-text">
+                            <i class="zmdi zmdi-pin"></i> Dirección: 50 metros sur del INS Guápiles, Limón, Guápiles <br>
+                            <i class="zmdi zmdi-phone"></i> Teléfono: +506-70084939 <br>
+                            <i class="zmdi zmdi-email"></i> Correo electrónico: umonge@esuaca.ac.cr
+                        </p>
+                    </div>
+                </div>
+                <div id="map" class="mt-4">
+                    <div class="animate__animated animate__zoomIn shadow rounded-3">
+                        <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2334.7612602872396!2d-83.78094422406926!3d10.214337086908492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0b812da91292f%3A0x9f3c39b4e6337a64!2sUniversidad%20Aut%C3%B3noma%20de%20Centro%20Am%C3%A9rica!5e0!3m2!1ses-419!2scr!4v1723142962999!5m2!1ses-419!2scr" width="100%" height="450" style="border:3px; box-shadow: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-12">
+                <div class="card border-0 shadow rounded animate__animated animate__zoomIn">
+                    <div class="card-body">
+                        <h4 class="card-title">Envíanos un Mensaje</h4>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="asunto" class="form-label">Asunto</label>
+                                <select class="form-control" id="asunto" required>
+                                    <option value="">--Selecciona un asunto--</option>
+                                    <option value="reserva">Reserva de vuelo</option>
+                                    <option value="info">Solicitud de información</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

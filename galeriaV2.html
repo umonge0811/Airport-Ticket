@@ -1,0 +1,68 @@
+    <body>
+        
+  
+   <div class="containerG">
+        <div id="slide">
+            <div class="itemG" style="background-image: url(assets/img/gal_1.jpg);">
+                <div class="content">
+                    <div class="name">LUNDEV</div>
+                    <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                    <button>See more</button>
+                </div>
+            </div>
+            <div class="itemG" style="background-image: url(assets/img/gal_2.jpg);">
+                <div class="content">
+                    <div class="name">LUNDEV</div>
+                    <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                    <button>See more</button>
+                </div>
+            </div>
+            <div class="itemG" style="background-image: url(assets/img/gal-3.jpg);">
+                <div class="content">
+                    <div class="name">LUNDEV</div>
+                    <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                    <button>See more</button>
+                </div>
+            </div>
+            <div class="itemG" style="background-image: url(assets/img/gal-4.jpg);">
+                <div class="content">
+                    <div class="name">LUNDEV</div>
+                    <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                    <button>See more</button>
+                </div>
+            </div>
+            <div class="itemG" style="background-image: url(assets/img/gal-4.jpg);">
+                <div class="content">
+                    <div class="name">LUNDEV</div>
+                    <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                    <button>See more</button>
+                </div>
+            </div>
+            <div class="itemG" style="background-image: url(assets/img/gal-4.jpg);">
+                <div class="content">
+                    <div class="name">LUNDEV</div>
+                    <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
+                    <button>See more</button>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev1" onclick="prevElement()"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="next1" onclick="nextElement()"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </div>
+
+
+    
+    <script >
+		function nextElement(){
+			let lists = document.querySelectorAll('.itemG');
+			document.getElementById('slide').appendChild(lists[0]);
+		}
+		function prevElement(){
+			let lists = document.querySelectorAll('.itemG');
+			document.getElementById('slide').prepend(lists[lists.length - 1]);
+		}
+	
+			</script>
+              </body>
