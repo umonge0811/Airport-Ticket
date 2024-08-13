@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(response => response.text())
             .then(html => {
                 content.innerHTML = html;
+                window.history.pushState(null, null, page + '.html'); 
             })
             .catch(error => {
                 console.error('Error loading page:', error);

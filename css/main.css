@@ -249,9 +249,14 @@ html {
 
 /*contentPage*/
 .dashboard-contentPage {
-	right: 0;
-	z-index: 1;
-	padding-left: 270px;
+	position: absolute;
+    top: 0;
+    height: 100%;
+    /* width: 100%; */ 
+    right: 0;
+    z-index: 1;
+    padding-left: 270px;
+    transition: all .3s ease-in-out;
 }
 
 .dashboard-Navbar,
@@ -703,13 +708,13 @@ html {
 }
 
 @media (min-width: 1200px) {
-	.hide-sidebar {
+	/*.hide-sidebar {
 		pointer-events: none;
 		opacity: 0;
 		border-right: none;
 		transform: translateX(-270px);
 	}
-
+*/
 	.no-paddin-left {
 		padding-left: 0;
 	}
