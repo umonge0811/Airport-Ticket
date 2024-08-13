@@ -97,6 +97,7 @@ html {
 	position: absolute;
 	top: 0;
 	height: 100%;
+	width: 100%;
 	transition: all .3s ease-in-out;
 }
 
@@ -268,6 +269,7 @@ html {
 .dashboard-Navbar {
 	background-color: #000;
 	overflow: hidden;
+	height: 50px;
 }
 
 .dashboard-Navbar>ul>li,

@@ -11,17 +11,17 @@
 
 
 	<link rel="stylesheet" href="css/galeriaV2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
 	<!-- SideBar -->
-	<section class="full-box cover dashboard-sideBar">
-		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
-		<div class="full-box dashboard-sideBar-ct">
+	<section class=" cover dashboard-sideBar">
+		<div class=" dashboard-sideBar-bg btn-menu-dashboard"></div>
+		<div class=" dashboard-sideBar-ct">
 
 			<!--SideBar Title -->
-			<div class="full-box text-center text-titles dashboard-sideBar-title py-2">
+			<div class=" text-center text-titles dashboard-sideBar-title py-2">
 				<img src="/assets/img/Logo_Title.png" alt="Logo de Airline UACA" class="img-fluid">
 			</div>
 
@@ -29,12 +29,12 @@
 
 
 			<!-- SideBar User info -->
-			<div class="full-box dashboard-sideBar-UserInfo my-3">
-				<figure class="full-box">
+			<div class=" dashboard-sideBar-UserInfo my-3">
+				<figure class="">
 					<img src="./assets/img/Ulises.jpg" alt="UserIcon">
 					<figcaption class="text-center text-titles">Ulises Monge</figcaption>
 				</figure>
-				<ul class="full-box list-unstyled text-center">
+				<ul class=" list-unstyled text-center">
 					<li>
 						<a href="#!">
 							<i class="zmdi zmdi-settings"></i>
@@ -49,7 +49,7 @@
 			</div>
 
 			<!-- SideBar Menu -->
-			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
+			<ul class="list-unstyled  dashboard-sideBar-Menu">
 				<li>
 					<a href="#" data-page="video" class="menulink">
 						<i class="zmdi zmdi-home zmdi-hc-fw"></i> Inicio
@@ -61,7 +61,7 @@
 						<i class="zmdi zmdi-airplane zmdi-hc-fw"></i> Vuelos <i
 							class="zmdi zmdi-caret-down pull-right"></i>
 					</a>
-					<ul class="list-unstyled full-box">
+					<ul class="list-unstyled ">
 						<li>
 							<a href="#" data-page="paso1" class="menulink"><i
 									class="zmdi zmdi-money-box zmdi-hc-fw"></i> Comprar Boletos</a>
@@ -76,76 +76,78 @@
 	</section>
 
 	<!-- Content page-->
-	<section class="full-box dashboard-contentPage">
+	<section class="dashboard-contentPage">
+		<div class="row	">
+			<!-- NavBar -->
+			<nav class="navbar navbar-expand-lg navbar-light bg-black py-0 sticky-top">
+				<div class="container-fluid">
+					<ul class="navbar-nav navbar-left">
+						<div class="container">
+							<ul class="nav">
+								<li class="nav-item">
+									<a class="nav-link active text-white" aria-current="page" data-page="quienessomos"
+										href="#">Quienes Somos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white" href="#" data-page="galeriaV2">Galeria</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white" href="#" data-page="contacto">Contacto</a>
+								</li>
+							</ul>
+						</div>
+					</ul>
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a href="#!" class="btn-menu-dashboard nav-link">
+								<i class="zmdi zmdi-more-vert"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#!" class="btn-Notifications-area nav-link">
+								<i class="zmdi zmdi-notifications-none"></i>
+								<span class="badge">1</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#!" class="btn-search nav-link">
+								<i class="zmdi zmdi-search"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#!" class="btn-modal-help nav-link">
+								<i class="zmdi zmdi-help-outline"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 
-		<!-- NavBar -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-black py-0 ">
-			<div class="container-fluid sticky-top ">
-				<ul class="navbar-nav navbar-left">
-					<div class="container">
-						<ul class="nav">
-							<li class="nav-item">
-								<a class="nav-link active text-white" aria-current="page" data-page="quienessomos"
-									href="#">Quienes Somos</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-white" href="#" data-page="galeriaV2">Galeria</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-white" href="#" data-page="contacto">Contacto</a>
-							</li>
-						</ul>
-					</div>
-				</ul>
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item">
-						<a href="#!" class="btn-menu-dashboard nav-link">
-							<i class="zmdi zmdi-more-vert"></i>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a href="#!" class="btn-Notifications-area nav-link">
-							<i class="zmdi zmdi-notifications-none"></i>
-							<span class="badge">1</span>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a href="#!" class="btn-search nav-link">
-							<i class="zmdi zmdi-search"></i>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a href="#!" class="btn-modal-help nav-link">
-							<i class="zmdi zmdi-help-outline"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-
-
-
+		</div>
 	</section>
 
 
 
-		<!-- Content page -->
+	<!-- STAR Content page MAIN-->
 
-		<div class="container-fluid ms-5">
+	<section class="dashboard-contentPage">
+		<div class="container mt-5"> 
 			<div class="row">
 				<div class="col-md-2 "> 
-					</div>
-				<div class="col-md-9 " id="content">
-					</div>
+				</div>
+				<div class="col-md-9 mt-5" id="content">
+				</div>
 			</div>
 		</div>
+	</section>
+	<!-- END Content page MAIN-->
 
 
 
 	<!-- Notifications area -->
-	<section class="full-box Notifications-area">
-		<div class="full-box Notifications-bg btn-Notifications-area"></div>
-		<div class="full-box Notifications-body">
+	<section class=" Notifications-area">
+		<div class=" Notifications-bg btn-Notifications-area"></div>
+		<div class=" Notifications-body">
 			<div class="Notifications-body-title text-titles text-center">
 				Notificaciones <i class="zmdi zmdi-close btn-Notifications-area"></i>
 			</div>
@@ -224,15 +226,13 @@
 	<!--====== Scripts -->
 	<script src="./js/jquery-3.1.1.min.js"></script>
 	<script src="./js/sweetalert2.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/material.min.js"></script>
 	<script src="./js/ripples.min.js"></script>
 	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="./js/main.js"></script>
 	<script src="./js/spa.js"></script>
 	<script src="/js/js_galeria.js"></script>
-
-    <script src="js/galeria.js"></script>
+	<script src="js/galeria.js"></script>
 
 
 
