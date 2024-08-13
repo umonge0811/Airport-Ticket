@@ -785,3 +785,11 @@ html {
 	backdrop-filter: blur(10px);
 	border: 1px solid rgba(255, 255, 255, 0.15);
 }
+
+.paso-activo {
+	display: block; /* O flex, grid, etc., según tu diseño */
+  }
+  
+  .paso-inactivo {
+	display: none;
+  }
