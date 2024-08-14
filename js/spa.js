@@ -130,7 +130,7 @@ function calcularMonto() {
   };
 
   const tarifaBase = tarifas[destino];
-  const mes = fecha.getMonth() + 1; // Los meses van de 0 a 11
+  const mes = fecha.getMonth() + 1; // meses van de 0 a 11
   const porcentajeTemporada = temporadas[mes];
   const porcentajeClase = clases[clase];
 
@@ -183,7 +183,8 @@ function calcularMonto() {
               </div>
             </div>
             <div class="text-center mt-4">
-           <a href="/home.html" class="btn-menu-dashboard nav-link">Finalizar Compra</a>
+           <div class="text-center mt-4">
+              <button id="finalizarCompra" class="btn btn-primary">Finalizar Compra</button>
             </div>
           </div>
         </div>
@@ -197,15 +198,26 @@ function calcularMonto() {
 
 
 
-  document.getElementById('resumen').innerHTML = resumenHTML;
+document.getElementById('resumen').innerHTML = resumenHTML;
+
+// Agregar evento al botón "Finalizar Compra"
+const finalizarCompraButton = document.getElementById('finalizarCompra');
+if (finalizarCompraButton) {
+  finalizarCompraButton.addEventListener('click', finalizarCompra);
+}
 }
 
-// Llamar a la función calcularMonto al cargar la página
-//ocument.addEventListener('DOMContentLoaded', calcularMonto);
-
 function finalizarCompra() {
-  alert('Compra finalizada. ¡Gracias por tu compra!');
-  // Aquí puedes añadir la lógica para finalizar la compra, como redirigir a una página de confirmación o procesar el pago.
+  Swal.fire({
+    title: 'Compra finalizada',
+    text: '¡Gracias por tu compra!',
+    icon: 'success',
+    showConfirmButton: false, 
+    timer: 2000, 
+    timerProgressBar: true, 
+  }).then(() => {
+    loadPage('paso1'); 
+  });
 }
 
 
